@@ -1,0 +1,46 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat May 06 06:01:26 2023
+[*]
+[dumpfile] "D:\github\Psoc5_OpenJTAG-TAP-Converter\Simulation\openjtag_tb.vcd"
+[dumpfile_mtime] "Sat May 06 05:44:07 2023"
+[dumpfile_size] 77474
+[savefile] "D:\github\Psoc5_OpenJTAG-TAP-Converter\Simulation\openjtag_tb.gtkw"
+[timestart] 171500
+[size] 1398 837
+[pos] 225 360
+*-14.851828 237100 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] OpenJTAG_TB.
+[treeopen] OpenJTAG_TB.dut.
+[treeopen] OpenJTAG_TB.dut.CtrlReg.Sync.ctrl_reg.
+[treeopen] OpenJTAG_TB.dut.Datapath_1_u0.
+[treeopen] OpenJTAG_TB.dut.Datapath_2_u0.
+[treeopen] OpenJTAG_TB.dut.StalledCmd.sts.
+[treeopen] OpenJTAG_TB.dut.StalledCmd.sts.sts_reg.
+[treeopen] OpenJTAG_TB.dut.StatusReg.sts.
+[treeopen] OpenJTAG_TB.dut.StatusReg.sts.sts_reg.
+[sst_width] 197
+[signals_width] 209
+[sst_expanded] 1
+[sst_vpaned_height] 238
+@28
+OpenJTAG_TB.dInReq
+OpenJTAG_TB.dOutReq
+OpenJTAG_TB.stall
+OpenJTAG_TB.clk
+OpenJTAG_TB.dut.CtrlReg.Sync.ctrl_reg.cpu_clock
+@22
+OpenJTAG_TB.dut.SM[3:0]
+OpenJTAG_TB.flagsOut[3:0]
+OpenJTAG_TB.bitCountOut[3:0]
+OpenJTAG_TB.bitsOut[7:0]
+@28
+OpenJTAG_TB.dut.Datapath_1_u0.fifo1_rd_en
+@22
+OpenJTAG_TB.dut.Datapath_1_u0.fifo1_data_out[7:0]
+@28
+OpenJTAG_TB.dut.Datapath_1_u0.FIFO1.rd_pointer[1:0]
+@29
+OpenJTAG_TB.dut.Datapath_1_u0.cpu_fifo_rd1
+[pattern_trace] 1
+[pattern_trace] 0
