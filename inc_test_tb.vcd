@@ -1,5 +1,5 @@
 $date
-	Sun May 28 08:40:07 2023
+	Sun May 28 09:27:46 2023
 $end
 $version
 	Icarus Verilog
@@ -16,15 +16,15 @@ $var reg 1 % test_inc1 $end
 $var reg 1 & test_inc2 $end
 $scope module counter_1 $end
 $var wire 1 # clk $end
-$var wire 1 % increment $end
 $var wire 2 ' out [1:0] $end
+$var wire 1 % test_inc $end
 $var reg 1 ( inc $end
 $var reg 2 ) val [1:0] $end
 $upscope $end
 $scope module counter_2 $end
 $var wire 1 # clk $end
-$var wire 1 & increment $end
 $var wire 2 * out [1:0] $end
+$var wire 1 & test_inc $end
 $var reg 1 + inc $end
 $var reg 2 , val [1:0] $end
 $upscope $end

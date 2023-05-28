@@ -1,10 +1,10 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sun May 28 06:46:12 2023
+[*] Sun May 28 16:28:41 2023
 [*]
 [dumpfile] "D:\github\iverilog-bugs\inc_test_tb.vcd"
-[dumpfile_mtime] "Sun May 28 06:43:33 2023"
-[dumpfile_size] 1137
+[dumpfile_mtime] "Sun May 28 16:27:46 2023"
+[dumpfile_size] 1139
 [savefile] "D:\github\iverilog-bugs\inc_test_tb.gtkw"
 [timestart] 2
 [size] 1000 600
@@ -19,14 +19,17 @@
 inc_test_TB.clk
 @22
 inc_test_TB.count[3:0]
+@200
+-
 @28
 inc_test_TB.test_inc1
 inc_test_TB.counter_1.inc
 inc_test_TB.out1[1:0]
-inc_test_TB.test_inc2
-@29
-inc_test_TB.counter_2.inc
+@200
+-
 @28
+inc_test_TB.test_inc2
+inc_test_TB.counter_2.inc
 inc_test_TB.out2[1:0]
 [pattern_trace] 1
 [pattern_trace] 0

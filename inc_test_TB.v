@@ -10,9 +10,9 @@ module inc_test_TB;
 	wire [1:0] out1;
 	wire [1:0] out2;
 
-	inc_test counter_1( .clk(clk), .increment(test_inc1), .out(out1));
+	inc_test counter_1( .clk(clk), .test_inc(test_inc1), .out(out1));
 
-	inc_test counter_2( .clk(clk), .increment(test_inc2), .out(out2));
+	inc_test counter_2( .clk(clk), .test_inc(test_inc2), .out(out2));
 
 	initial	
 	begin
@@ -59,10 +59,10 @@ $dumpvars(0,inc_test_TB);
 endmodule    
 
 
-module inc_test(clk, increment, out);
+module inc_test(clk, test_inc, out);
 
 	input clk;
-	input increment;
+	input test_inc;
 	output [1:0] out;
 
 
@@ -78,7 +78,7 @@ module inc_test(clk, increment, out);
 
 	always @(posedge clk)
 	begin
-		if (increment)
+		if (test_inc)
 		begin
 			inc <= 1;
 			@(negedge clk);
