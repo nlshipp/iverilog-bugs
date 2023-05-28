@@ -1,0 +1,109 @@
+$date
+	Sun May 28 08:40:07 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module inc_test_TB $end
+$var wire 2 ! out2 [1:0] $end
+$var wire 2 " out1 [1:0] $end
+$var reg 1 # clk $end
+$var reg 4 $ count [3:0] $end
+$var reg 1 % test_inc1 $end
+$var reg 1 & test_inc2 $end
+$scope module counter_1 $end
+$var wire 1 # clk $end
+$var wire 1 % increment $end
+$var wire 2 ' out [1:0] $end
+$var reg 1 ( inc $end
+$var reg 2 ) val [1:0] $end
+$upscope $end
+$scope module counter_2 $end
+$var wire 1 # clk $end
+$var wire 1 & increment $end
+$var wire 2 * out [1:0] $end
+$var reg 1 + inc $end
+$var reg 2 , val [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 ,
+x+
+b0 *
+b0 )
+x(
+b0 '
+0&
+0%
+b0 $
+0#
+b0 "
+b0 !
+$end
+#4
+0(
+0+
+b1 $
+1#
+#8
+0#
+#12
+b1 "
+b1 '
+b1 )
+1&
+b10 $
+1(
+1%
+1#
+#16
+0(
+0#
+#20
+b1 !
+b1 *
+b1 ,
+b10 "
+b10 '
+b10 )
+1+
+0&
+b11 $
+1(
+0%
+1#
+#24
+0(
+0+
+0#
+#28
+b100 $
+1#
+#32
+0#
+#36
+b101 $
+1#
+#40
+0#
+#44
+b110 $
+1#
+#48
+0#
+#52
+b111 $
+1#
+#56
+0#
+#60
+b1000 $
+1#
