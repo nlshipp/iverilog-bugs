@@ -1,4 +1,4 @@
-iverilog -s inc_test_TB  inc_test_TB.v
+iverilog -pfileline=1 -s inc_test_TB  inc_test_TB.v
 
 vvp a.out
 

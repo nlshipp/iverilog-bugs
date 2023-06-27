@@ -23,12 +23,30 @@ $dumpvars(0,inc_test_TB);
 		test_inc1 = 0;
 		test_inc2 = 0;
 		count = 0;
-		#10;
+		#7;
+		@(negedge clk);
+// 		$stop; // type trace on - cont
 	
-		@(posedge clk);
-		test_inc1 = 1'b1;
-		@(posedge clk);
-		test_inc1 = 1'b0;
+		// out1 is updated only twice in this loop
+		for (integer i = 0 ; i < 8 ; i = i + 1)
+		begin
+			@(posedge clk);
+			test_inc1 = 1'b1;
+			@(posedge clk);
+			test_inc1 = 1'b0;
+		end
+	
+		// out1 is updated the expected 8 times if zero length delays are added
+		for (integer j = 0 ; j < 8 ; j = j + 1)
+		begin
+			@(posedge clk);
+			#0 test_inc1 = 1'b1;
+			@(posedge clk);
+			#0 test_inc1 = 1'b0;
+		end
+
+		@(negedge clk);
+//		$stop; // type trace off - cont
 		#40;
 		
 
@@ -38,7 +56,7 @@ $dumpvars(0,inc_test_TB);
 	always @(posedge clk)
 	begin
 		count <= count + 1;
-		if (count == 1)
+		if ((count % 2) == 1)
 		begin
 			test_inc2 <= 1;
 		end
